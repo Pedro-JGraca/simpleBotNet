@@ -1,10 +1,13 @@
 #!/bin/sh
 
-rm -rf build/client/*
-rm -rf build/server/*
-rm -rf build/admin/*
+rm -rf ./build/
 
 #builds client
+mkdir build
+mkdir build/client
+mkdir build/server
+mkdir build/admin
+
 cd src/client
 make
 mv client ../../build/client/
