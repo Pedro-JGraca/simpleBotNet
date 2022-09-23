@@ -10,23 +10,30 @@
   <dt>2. Sobre a estrutura de arquivos geral desse diretório</dt>
   <dd>- Como podemos ver existem 3 diretorios principais:</dd>
 
-  <dd>    1. src </dt>
-  <dd>    2. build </dt>
-  <dd>    3. exec </dt>
+  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. src </dd>
+  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. build </dd>
+  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. exec </dd>
   <dd>- Na src temos o código fonte.</dd>
   <dd>- Na build temos apenas a estrutura de 3 diretórios com nenhum arquivo dentro. Esses diretorios são:</dd>
-  <dt>    client</dt>
-  <dt>    server</dt>
-  <dt>    admin</dt>
+  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspclient</dd>
+  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspserver</dd>
+  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspadmin</dd>
   <dd>-  Todos eles estão vazios.</dd>
   <dd>-  Na exec temos a mesma estrutura de arquivos, só que dessa vês nós temos arquivos dentro.</dd>   
   <dd>- A ideia é que a build é o local de produção, se vc der git clone e mandar compilar, é nela que irá ser construído os arquivos. (Se vc não fizer nenhuma alteração, ficará igual a exec). A exec é para caso vc queria apenas copiar os programas para uso, sem querer compilar. Fique atento as dependências necessárias. </dd>
 </dl>
 
-3. Sobre como usar esse programa
+<dl>
+  <dt>3. Sobre como usar esse programa</dt>
+  <dd>Entre no diretório "exec".</dd>
+  <dt>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3.1: Servidor:</dt>
+  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo diretorio "server" temos o arquivo "app.py". É um servido em flask. Aonde vc desejar montar primeiro copie esse diretorio para a maquina desejada e execute o seguinte comando: (isso ta em modo de desenvolvimento, não foi feito para um servidor de produção)</dd>
+</dl>
 
-    Entre no diretório "exec".
-    3.1: Servidor
+
+
+    
+    
         No diretorio "server" temos o arquivo "app.py". É um servido em flask. Aonde vc desejar montar primeiro copie esse diretorio para a maquina desejada e execute o seguinte comando: (isso ta em modo de desenvolvimento, não foi feito para um servidor de produção)
         $python3 app.py SENHA PORTA
     
