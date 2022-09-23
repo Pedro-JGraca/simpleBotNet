@@ -1,8 +1,13 @@
 # simpleBotnet
 
-1. Sobre o programa
-    Esse é um simples projeto de uma botnet. A ideia é usa-la para fins acadêmicos (estudo).
-    Podemos ver o arquivo simpleBotnet.jpg. Basicamente é uma imagem que descreve o sistema.
+<dl>
+  <dt>1. Sobre o programa</dt>
+  <dd>- Esse é um simples projeto de uma botnet. A ideia é usa-la para fins acadêmicos (estudo).</dd>
+  <dt>Milk</dt>
+  <dd>- Podemos ver o arquivo simpleBotnet.jpg. Basicamente é uma imagem que descreve o sistema.</dd>
+</dl>
+    
+    
 
 2. Sobre a estrutura de arquivos geral desse diretório
 
