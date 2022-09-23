@@ -8,19 +8,20 @@
     
 <dl>
   <dt>2. Sobre a estrutura de arquivos geral desse diretório</dt>
-  <dd>- Como podemos ver existem 3 diretorios principais:</dd>
+  <dd>- Existem 3 diretorios principais:</dd>
 
   <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. src </dd>
   <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. build </dd>
   <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. exec </dd>
   <dd>- Na src temos o código fonte.</dd>
-  <dd>- Na build temos apenas a estrutura de 3 diretórios com nenhum arquivo dentro. Esses diretorios são:</dd>
+  <dd>- Na build teremos a estrutura de 3 diretórios:</dd>
   <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspclient</dd>
   <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspserver</dd>
   <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspadmin</dd>
-  <dd>-  Todos eles estão vazios.</dd>
-  <dd>-  Na exec temos a mesma estrutura de arquivos, só que dessa vês nós temos arquivos dentro.</dd>   
+  <dd>- Na exec temos a mesma estrutura de arquivos.</dd>   
+  <dd>- Apesar de que ela não aparece ai, quando vc iniciar a execução que está descrita no item quatro, ela aparecerá com o conteúdo correto.</dd>
   <dd>- A ideia é que a build é o local de produção, se vc der git clone e mandar compilar, é nela que irá ser construído os arquivos. (Se vc não fizer nenhuma alteração, ficará igual a exec). A exec é para caso vc queria apenas copiar os programas para uso, sem querer compilar. Fique atento as dependências necessárias. </dd>
+  <dd>- Com isso deixamos aberto para fazer alterações e poder ter o progama em diferentes ambientes.</dd>
 </dl>
 
 <dl>
@@ -29,8 +30,8 @@
   <dt>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3.1: Servidor:</dt>
   <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- No diretorio "server" temos o arquivo "app.py". É um servido em flask. Aonde vc desejar montar primeiro copie esse diretorio para a maquina desejada e execute o seguinte comando: (isso ta em modo de desenvolvimento, não foi feito para um servidor de produção)</dd> 
   <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$python3 app.py SENHA PORTA</dd>
-  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Esse argumento que eu chamei de "SENHA" logo após ao comando é a senha do servidor. Esse servidor só aceita as requisições de ordem para o cliente se a requisição vier com essa senha</dd>
-  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- O segundo argumento é um numero que vc precisará colocar. Esse numero será a porta usada para a comunicação com o servidor.</dd>
+  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Esse argumento que eu chamei de "SENHA" logo após ao comando é a senha do servidor. Esse servidor só aceita as requisições de ordem para o cliente se a requisição vier com essa senha. Esse argumento está DEFININDO A SENHA QUE SERÁ USADA.</dd>
+  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- O segundo argumento é um numero que vc precisará colocar. Esse numero será a porta usada para a comunicação com o servidor. A porta precisa estar aberta, poderia ser oculta, mas não achei necessário para o objetivo do programa.</dd>
   <dt>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3.2: Administrador</dt>
   <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- No diretorio "admin" temos o arquivo "main.py". É ele que vc precisará executar para se comunicar com o servidor. Além disso temos outros dois arquivos que são muito importantes. Um deles é outro python ("front.py") e para a execução vc não deve precisar mexer nele (só leve ele junto com o "main.py" para a maquina de administração). </dd>
   <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- O outro é chamado de "serverLink.txt". Nele vc colocará o endereço do servidor no mesmo formato do exemplo ali.</dd>
