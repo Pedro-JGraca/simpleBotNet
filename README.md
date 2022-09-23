@@ -3,31 +3,24 @@
 <dl>
   <dt>1. Sobre o programa</dt>
   <dd>- Esse é um simples projeto de uma botnet. A ideia é usa-la para fins acadêmicos (estudo).</dd>
-  <dt>Milk</dt>
   <dd>- Podemos ver o arquivo simpleBotnet.jpg. Basicamente é uma imagem que descreve o sistema.</dd>
 </dl>
     
-    
-
-2. Sobre a estrutura de arquivos geral desse diretório
-
-    Como podemos ver existem 3 diretorios principais:
+<dl>
+  <dt>2. Sobre a estrutura de arquivos geral desse diretório</dt>
+  <dd>- Como podemos ver existem 3 diretorios principais:</dd>  
         1. src
         2. build
-        3. exec
-
-        Na src temos o código fonte.
-
-        Na build temos apenas a estrutura de 3 diretórios com nenhum arquivo dentro. Esses diretorios são:
-            client
-            server
-            admin
-            
-        Todos eles estão vazios.
-
-        Na exec temos a mesma estrutura de arquivos, só que dessa vês nós temos arquivos dentro.
-
-        A ideia é que a build é o local de produção, se vc der git clone e mandar compilar, é nela que irá ser construído os arquivos. (Se vc não fizer nenhuma alteração, ficará igual a exec). A exec é para caso vc queria apenas copiar os programas para uso, sem querer compilar. Fique atento as dependências necessárias.
+        3. exec  
+  <dd>- Na src temos o código fonte.</dd>
+  <dd>- Na build temos apenas a estrutura de 3 diretórios com nenhum arquivo dentro. Esses diretorios são:</dd>
+        client
+        server
+        admin
+  <dd>-  Todos eles estão vazios.</dd>
+  <dd>-  Na exec temos a mesma estrutura de arquivos, só que dessa vês nós temos arquivos dentro.</dd>   
+  <dd>- A ideia é que a build é o local de produção, se vc der git clone e mandar compilar, é nela que irá ser construído os arquivos. (Se vc não fizer nenhuma alteração, ficará igual a exec). A exec é para caso vc queria apenas copiar os programas para uso, sem querer compilar. Fique atento as dependências necessárias. </dd>
+</dl>
 
 3. Sobre como usar esse programa
 
