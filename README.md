@@ -8,15 +8,19 @@
     
 <dl>
   <dt>2. Sobre a estrutura de arquivos geral desse diretório</dt>
-  <dd>- Como podemos ver existem 3 diretorios principais:</dd>  
-        1. src
-        2. build
-        3. exec  
+  <dd>- Como podemos ver existem 3 diretorios principais:</dd>
+  <dl>
+        <dt>1. src </dt>
+        <dt>2. build </dt>
+        <dt>3. exec </dt>
+  </dl>
   <dd>- Na src temos o código fonte.</dd>
   <dd>- Na build temos apenas a estrutura de 3 diretórios com nenhum arquivo dentro. Esses diretorios são:</dd>
-        client
-        server
-        admin
+  <dl>
+        <dt>client</dt>
+        <dt>server</dt>
+        <dt>admin</dt>
+  </dl>
   <dd>-  Todos eles estão vazios.</dd>
   <dd>-  Na exec temos a mesma estrutura de arquivos, só que dessa vês nós temos arquivos dentro.</dd>   
   <dd>- A ideia é que a build é o local de produção, se vc der git clone e mandar compilar, é nela que irá ser construído os arquivos. (Se vc não fizer nenhuma alteração, ficará igual a exec). A exec é para caso vc queria apenas copiar os programas para uso, sem querer compilar. Fique atento as dependências necessárias. </dd>
