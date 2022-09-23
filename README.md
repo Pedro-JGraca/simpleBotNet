@@ -10,9 +10,9 @@
   <dt>2. Sobre a estrutura de arquivos geral desse diretório</dt>
   <dd>- Como podemos ver existem 3 diretorios principais:</dd>
 
-  <dt>    1. src </dt>
-  <dt>    2. build </dt>
-  <dt>    3. exec </dt>
+  <dd>    1. src </dt>
+  <dd>    2. build </dt>
+  <dd>    3. exec </dt>
   <dd>- Na src temos o código fonte.</dd>
   <dd>- Na build temos apenas a estrutura de 3 diretórios com nenhum arquivo dentro. Esses diretorios são:</dd>
   <dt>    client</dt>
